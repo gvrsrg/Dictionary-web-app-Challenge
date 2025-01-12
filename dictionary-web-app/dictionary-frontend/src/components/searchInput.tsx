@@ -10,7 +10,8 @@ export default function searchInput() {
 
   return (
     <div>
-        <input type="text" value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
+        <label>Search:</label>
+        <input capture="user" type="text" value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
     </div>
   )
 }
